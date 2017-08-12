@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Trapper</string>
+    <string name="edittxt_hint">How many tap to win</string>
+</resources>
