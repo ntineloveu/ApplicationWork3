@@ -4,13 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class PlayActivity extends Activity implements View.OnClickListener {
 
     TextView txtShow;
-    Button btnStar;
+    ImageButton btnStar;
     int inputTotal;
     int check;
 
@@ -39,7 +39,7 @@ public class PlayActivity extends Activity implements View.OnClickListener {
     private void initInstances() {
         check = 0;
         txtShow = (TextView) findViewById(R.id.txtShow);
-        btnStar = (Button) findViewById(R.id.btnStar);
+        btnStar = (ImageButton) findViewById(R.id.btnStar);
         btnStar.setOnClickListener(this);
     }
 

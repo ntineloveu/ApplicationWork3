@@ -7,4 +7,5 @@
     <color name="colorWhite">#EEFFFFFF</color>
     <color name="colorBlack">#EE000000</color>
     <color name="colorHint">#55000000</color>
+    <color name="colorAlpha">#00000000</color>
 </resources>
