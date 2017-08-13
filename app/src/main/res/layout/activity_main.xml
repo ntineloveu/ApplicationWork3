@@ -5,58 +5,51 @@
     android:layout_height="match_parent"
     tools:context="com.example.tngp17_001.applicationwork3.MainActivity">
 
-    <ScrollView
-        android:fillViewport="true"
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="vertical"
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/tapper"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp">
 
-            <ImageView
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/tapper"
-                android:scaleType="centerCrop"
-                android:adjustViewBounds="true"
-                android:layout_width="350dp"
-                android:layout_height="wrap_content" />
+        </View>
 
-            <View
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="0dp">
+        <EditText
+            android:layout_gravity="center"
+            android:id="@+id/editTxtInput"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="30dp"
+            android:hint="@string/edittxt_hint"
+            android:inputType="number"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="40dp" />
 
-            </View>
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/btnPlay"
+            android:layout_marginBottom="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/playbtn"
+            android:adjustViewBounds="true"
+            android:background="@color/colorAlpha"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
 
-            <EditText
-                android:layout_gravity="center"
-                android:id="@+id/editTxtInput"
-                android:background="@color/colorWhite"
-                android:layout_marginBottom="30dp"
-                android:hint="@string/edittxt_hint"
-                android:inputType="number"
-                android:textColorHint="@color/colorHint"
-                android:textColor="@color/colorBlack"
-                android:gravity="center"
-                android:layout_width="250dp"
-                android:layout_height="40dp" />
-
-            <ImageButton
-                android:layout_gravity="center"
-                android:id="@+id/btnPlay"
-                android:layout_marginBottom="50dp"
-                android:scaleType="centerInside"
-                android:src="@drawable/playbtn"
-                android:adjustViewBounds="true"
-                android:background="@color/colorAlpha"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-    </ScrollView>
+    </LinearLayout>
 
 </RelativeLayout>
