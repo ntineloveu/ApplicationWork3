@@ -15,30 +15,31 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content" />
 
-    <View
-        android:layout_weight="1"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="30dp">
 
-    </View>
+        <EditText
+            android:id="@+id/editTxtInput"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="@color/colorWhite"
+            android:gravity="center"
+            android:hint="@string/edittxt_hint"
+            android:inputType="number"
+            android:textColor="@color/colorBlack"
+            android:textColorHint="@color/colorHint" />
 
-    <EditText
-        android:layout_gravity="center"
-        android:id="@+id/editTxtInput"
-        android:background="@color/colorWhite"
-        android:layout_marginBottom="30dp"
-        android:hint="@string/edittxt_hint"
-        android:inputType="number"
-        android:textColorHint="@color/colorHint"
-        android:textColor="@color/colorBlack"
-        android:gravity="center"
-        android:layout_width="250dp"
-        android:layout_height="40dp" />
+    </RelativeLayout>
 
     <ImageButton
         android:layout_gravity="center"
         android:id="@+id/btnPlay"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:scaleType="centerInside"
         android:src="@drawable/selector_btn_play_default"
         android:adjustViewBounds="true"
