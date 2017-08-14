@@ -19,8 +19,8 @@ public class PlayActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
-        getExtraString();
         initInstances();
+        getExtraString();
     }
 
     private void getExtraString() {
@@ -38,6 +38,7 @@ public class PlayActivity extends Activity implements View.OnClickListener {
 
     private void initInstances() {
         check = 0;
+        inputTotal =0;
         txtShow = (TextView) findViewById(R.id.txtShow);
         btnStar = (ImageButton) findViewById(R.id.btnStar);
         btnStar.setOnClickListener(this);
