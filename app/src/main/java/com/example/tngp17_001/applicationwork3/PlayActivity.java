@@ -9,10 +9,10 @@ import android.widget.TextView;
 
 public class PlayActivity extends Activity implements View.OnClickListener {
 
-    TextView txtShow;
-    ImageButton btnStar;
-    int inputTotal;
-    int check;
+    private TextView txtShow;
+    private ImageButton btnStar;
+    private int inputTotal;
+    private int check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class PlayActivity extends Activity implements View.OnClickListener {
 
     private void initInstances() {
         check = 0;
-        inputTotal =0;
+        inputTotal = 0;
         txtShow = (TextView) findViewById(R.id.txtShow);
         btnStar = (ImageButton) findViewById(R.id.btnStar);
         btnStar.setOnClickListener(this);

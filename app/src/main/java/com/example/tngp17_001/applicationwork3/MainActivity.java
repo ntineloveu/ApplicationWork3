@@ -10,9 +10,9 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
-    EditText editTextInput;
-    ImageButton btnPlay;
-    int inputTotal;
+    private EditText editTextInput;
+    private ImageButton btnPlay;
+    private int inputTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             nextPage(inputTotal);
         } catch (NumberFormatException e) {
             e.printStackTrace();
-            Toast.makeText(this, "Please enter integer number",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please enter integer number", Toast.LENGTH_SHORT).show();
         }
     }
 
