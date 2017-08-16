@@ -39,6 +39,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+    }
+
     private void nextPage(int inputTotal) {
         Intent i = new Intent(this, PlayActivity.class);
         i.putExtra("inputTotal", String.valueOf(inputTotal));
